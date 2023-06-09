@@ -66,6 +66,7 @@ theme:
 
 extra:
   homepage: http://192.168.200.129:8000/
+  homepage_books: http://192.168.200.129:8000/index_books/
 
   social:
     - icon: fontawesome/brands/github
