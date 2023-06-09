@@ -1,0 +1,170 @@
+# Project information
+site_name: 开森书屋
+site_url: http://chat.kaisen.me:8000/
+site_author: MiniKaisen
+site_description: 阅读是一种美好的体验，它可以带给我们无尽的知识与智慧。通过读书，我们能够拓展视野，更好地了解世界的多样性与丰富性，引领我们走向成功。阅读不仅能够丰富我们的内心，还能提高我们的思维和沟通能力。它将我们带到不同的时间、空间和文化，让我们体验前人的智慧，拥抱未来的可能。阅读可以陶冶我们的情操，激发我们的创造力与想象力。在安静的阅读时光中，我们可以暂时忘却繁忙的现实，寻求心灵的慰藉与平静。
+docs_dir: docs
+# Repository
+repo_name: xiaoasen/hello-books-detail
+repo_url: https://github.com/xiaoasen/hello-books-detail
+# edit_uri: https://github.com/xiaoasen/hello-books-detail/tree/main/docs
+
+# Copyright
+copyright: Copyright &copy; 2023 MiniKaisen
+
+# Configuration
+theme:
+  name: material
+  custom_dir: docs/overrides
+  language: zh
+  features:
+    # - announce.dismiss
+    - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    # - navigation.sections
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    #- toc.integrate
+  palette:
+    - scheme: default
+      primary: white
+      # accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      # primary: grey
+      # accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Noto Sans SC
+    code: Fira Code
+  #favicon: assets/images/favicon.png
+  #logo: assets/images/logo.png
+  icon:
+    logo: logo
+    repo: fontawesome/brands/github
+    edit: material/file-edit-outline
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/xiaoasen
+  generator: false
+
+  web:
+    domain: http://192.168.200.129
+    port: 8000
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - macros:
+      include_dir: docs/include
+
+  #- gallery:
+  #    examples_dirs: docs/examples          # path to your example scripts
+  #    gallery_dirs: docs/generated/gallery  # where to save generated gallery
+      # ... (other options)
+
+comments:
+    enabled: true
+    # defaults to utterances unless replaced with mode: giscus
+    mode: giscus
+    type: issues
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+   # - pymdownx.magiclink:
+  #     repo_url_shorthand: true
+  #     user: squidfunk
+  #     repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+  - neoteroi.cards
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/neoteroi.css
+  
+
+# Page tree
+nav:
+  - Setup:
+    - setup/index.md
+    - Changing the colors: setup/changing-the-colors.md
+    - Changing the fonts: setup/changing-the-fonts.md
+    - Changing the language: setup/changing-the-language.md
+    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
+    - Ensuring data privacy: setup/ensuring-data-privacy.md
+    - Setting up navigation: setup/setting-up-navigation.md
+    - Setting up site search: setup/setting-up-site-search.md
+    - Setting up site analytics: setup/setting-up-site-analytics.md
+    - Setting up social cards: setup/setting-up-social-cards.md
+    - Setting up a blog: setup/setting-up-a-blog.md
+    - Setting up tags: setup/setting-up-tags.md
+    - Setting up versioning: setup/setting-up-versioning.md
+    - Setting up the header: setup/setting-up-the-header.md
+    - Setting up the footer: setup/setting-up-the-footer.md
+    - Adding a git repository: setup/adding-a-git-repository.md
+    - Adding a comment system: setup/adding-a-comment-system.md
+    - Building an optimized site: setup/building-an-optimized-site.md
+    - Building for offline usage: setup/building-for-offline-usage.md
+    - Extensions:
+      - setup/extensions/index.md
+      - Python Markdown: setup/extensions/python-markdown.md
+      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
+    - Dependencies:
+      - setup/dependencies/image-processing.md
+
+
