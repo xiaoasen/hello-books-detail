@@ -142,5 +142,6 @@ nav:
     - sicp/index.md
     - 序: sicp/foreword.md
     - 第2版前言: sicp/preface_to_the_second_edition.md
+    - 第1版前言: sicp/preface_to_the_first_edition.md
 
 
