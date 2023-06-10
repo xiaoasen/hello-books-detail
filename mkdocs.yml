@@ -144,5 +144,157 @@ nav:
     - 第2版前言: sicp/preface_to_the_second_edition.md
     - 第1版前言: sicp/preface_to_the_first_edition.md
     - 致谢: sicp/acknowledgments.md
+    - 1  构造过程抽象: 
+      - sicp/chapter_1/index.md
+      - 1.1  程序设计的基本元素: 
+        - sicp/chapter_1/chapter_1_1/index.md
+        - 1.1.1  表达式: sicp/chapter_1/chapter_1_1/1.1.1.md
+        - 1.1.2  命名和环境: sicp/chapter_1/chapter_1_1/1.1.2.md
+        - 1.1.3  组合式的求值: sicp/chapter_1/chapter_1_1/1.1.3.md
+        - 1.1.4  复合过程: sicp/chapter_1/chapter_1_1/1.1.4.md
+        - 1.1.5  过程应用的代换模型: sicp/chapter_1/chapter_1_1/1.1.5.md
+        - 1.1.6  条件表达式和谓词: sicp/chapter_1/chapter_1_1/1.1.6.md
+        - 1.1.7  实例：采用牛顿法求平方根: sicp/chapter_1/chapter_1_1/1.1.7.md
+        - 1.1.8  过程作为黑箱抽象: sicp/chapter_1/chapter_1_1/1.1.8.md
+      - 1.2  过程与它们所产生的计算: 
+        - sicp/chapter_1/chapter_1_2/index.md
+        - 1.2.1  线性的递归和迭代: sicp/chapter_1/chapter_1_2/1.2.1.md
+        - 1.2.2  树形递归: sicp/chapter_1/chapter_1_2/1.2.2.md
+        - 1.2.3  增长的阶: sicp/chapter_1/chapter_1_2/1.2.3.md
+        - 1.2.4  求幕: sicp/chapter_1/chapter_1_2/1.2.4.md
+        - 1.2.5  最大公约数: sicp/chapter_1/chapter_1_2/1.2.5.md
+        - 1.2.6  实例：素数检测: sicp/chapter_1/chapter_1_2/1.2.6.md
+      - 1.3  用高阶函数做抽象: 
+        - sicp/chapter_1/chapter_1_3/index.md
+        - 1.3.1  过程作为参数: sicp/chapter_1/chapter_1_3/1.3.1.md
+        - 1.3.2  用lambda构造过程: sicp/chapter_1/chapter_1_3/1.3.2.md
+        - 1.3.3  过程作为一般性的方法: sicp/chapter_1/chapter_1_3/1.3.3.md
+        - 1.3.4  过程作为返回值: sicp/chapter_1/chapter_1_3/1.3.4.md
+    - 2  构造数据抽象: 
+      - sicp/chapter_2/index.md
+      - 2.1  数据抽象导引: 
+        - sicp/chapter_2/chapter_2_1/index.md
+        - 2.1.1  实例：有理数的算术运算: sicp/chapter_2/chapter_2_1/2.1.1.md
+        - 2.1.2  抽象屏障: sicp/chapter_2/chapter_2_1/2.1.2.md
+        - 2.1.3  数据意味着什么?: sicp/chapter_2/chapter_2_1/2.1.3.md
+        - 2.1.4  扩展练习：区间算术: sicp/chapter_2/chapter_2_1/2.1.4.md
+      - 2.2  层次性数据和闭包性质: 
+        - sicp/chapter_2/chapter_2_2/index.md
+        - 2.2.1  序列的表示: sicp/chapter_2/chapter_2_2/2.2.1.md
+        - 2.2.2  层次性结构: sicp/chapter_2/chapter_2_2/2.2.2.md
+        - 2.2.3  序列作为一种约定的界面: sicp/chapter_2/chapter_2_2/2.2.3.md
+        - 2.2.4  实例： 一个图形语言: sicp/chapter_2/chapter_2_2/2.2.4.md
+      - 2.3  符号数据: 
+        - sicp/chapter_2/chapter_2_3/index.md
+        - 2.3.1  引 号: sicp/chapter_2/chapter_2_3/2.3.1.md
+        - 2.3.2  实例：符号求导: sicp/chapter_2/chapter_2_3/2.3.2.md
+        - 2.3.3  实例：集合的表示: sicp/chapter_2/chapter_2_3/2.3.3.md
+        - 2.3.4  实例：Huffman编码树: sicp/chapter_2/chapter_2_3/2.3.4.md
+      - 2.4  抽象数据的多重表示: 
+        - sicp/chapter_2/chapter_2_4/index.md
+        - 2.4.1  复数的表示: sicp/chapter_2/chapter_2_4/2.4.1.md
+        - 2.4.2  带标志数据: sicp/chapter_2/chapter_2_4/2.4.2.md
+        - 2.4.3  数据导向的程序设计和可加性: sicp/chapter_2/chapter_2_4/2.4.3.md
+      - 2.5  带有通用型操作的系统: 
+        - sicp/chapter_2/chapter_2_5/index.md
+        - 2.5.1  通用型算术运算: sicp/chapter_2/chapter_2_5/2.5.1.md
+        - 2.5.2  不同类型数据的组合: sicp/chapter_2/chapter_2_5/2.5.2.md
+        - 2.5.3  实例：符号代数: sicp/chapter_2/chapter_2_5/2.5.3.md
+    - 3  模块化、对象和状态: 
+      - sicp/chapter_3/index.md
+      - 3.1  赋值和局部状态: 
+        - sicp/chapter_3/chapter_3_1/index.md
+        - 3.1.1  局部状态变量: sicp/chapter_3/chapter_3_1/3.1.1.md
+        - 3.1.2  引进赋值带来的利益: sicp/chapter_3/chapter_3_1/3.1.2.md
+        - 3.1.3  引进赋值的代价: sicp/chapter_3/chapter_3_1/3.1.3.md
+      - 3.2  求值的环境模型: 
+        - sicp/chapter_3/chapter_3_2/index.md
+        - 3.2.1  求值规则: sicp/chapter_3/chapter_3_2/3.2.1.md
+        - 3.2.2  简单过程的应用: sicp/chapter_3/chapter_3_2/3.2.2.md
+        - 3.2.3  将框架看作局部状态的展台: sicp/chapter_3/chapter_3_2/3.2.3.md
+        - 3.2.4  内部定义: sicp/chapter_3/chapter_3_2/3.2.4.md
+      - 3.3  用变动数据做模拟: 
+        - sicp/chapter_3/chapter_3_3/index.md
+        - 3.3.1  变动的表结构: sicp/chapter_3/chapter_3_3/3.3.1.md
+        - 3.3.2  队列的表示: sicp/chapter_3/chapter_3_3/3.3.2.md
+        - 3.3.3  表格的表示: sicp/chapter_3/chapter_3_3/3.3.3.md
+        - 3.3.4  数字电路的模拟器: sicp/chapter_3/chapter_3_3/3.3.4.md
+        - 3.3.5  约束的传播: sicp/chapter_3/chapter_3_3/3.3.5.md
+      - 3.4  并发：时间是一个本质问题: 
+        - sicp/chapter_3/chapter_3_4/index.md
+        - 3.4.1  并发系统中时间的性质: sicp/chapter_3/chapter_3_4/3.4.1.md
+        - 3.4.2  控制并发的机制: sicp/chapter_3/chapter_3_4/3.4.2.md
+      - 3.5  流: 
+        - sicp/chapter_3/chapter_3_5/index.md
+        - 3.5.1  流作为延时的表: sicp/chapter_3/chapter_3_5/3.5.1.md
+        - 3.5.2  无穷流: sicp/chapter_3/chapter_3_5/3.5.2.md
+        - 3.5.3  流计算模式的使用: sicp/chapter_3/chapter_3_5/3.5.3.md
+        - 3.5.4  流和延时求值: sicp/chapter_3/chapter_3_5/3.5.4.md
+        - 3.5.5  函数式程序的模块化和对象的模块化: sicp/chapter_3/chapter_3_5/3.5.5.md
+    - 4  元语言抽象: 
+      - sicp/chapter_4/index.md
+      - 4.1  元循环求值器: 
+        - sicp/chapter_4/chapter_4_1/index.md
+        - 4.1.1  求值器的内核: sicp/chapter_4/chapter_4_1/4.1.1.md
+        - 4.1.2  表达式的表示: sicp/chapter_4/chapter_4_1/4.1.2.md
+        - 4.1.3  求值器数据结构: sicp/chapter_4/chapter_4_1/4.1.3.md
+        - 4.1.4  作为程序运行这个求值器: sicp/chapter_4/chapter_4_1/4.1.4.md
+        - 4.1.5  将数据作为程序: sicp/chapter_4/chapter_4_1/4.1.5.md
+        - 4.1.6  内部定义: sicp/chapter_4/chapter_4_1/4.1.6.md
+        - 4.1.7  将语法分析与执行分离: sicp/chapter_4/chapter_4_1/4.1.7.md
+      - 4.2  Scheme的变形-— 惰性求值: 
+        - sicp/chapter_4/chapter_4_2/index.md
+        - 4.2.1  正则序和应用序: sicp/chapter_4/chapter_4_2/4.2.1.md
+        - 4.2.2  一个采用惰性求值的解释器: sicp/chapter_4/chapter_4_2/4.2.2.md
+        - 4.2.3  将流作为惰性的表: sicp/chapter_4/chapter_4_2/4.2.3.md
+      - 4.3  Scheme的变形——非确定性计算: 
+        - sicp/chapter_4/chapter_4_3/index.md
+        - 4.3.1  amb和搜索: sicp/chapter_4/chapter_4_3/4.3.1.md
+        - 4.3.2  非确定性程序的实例: sicp/chapter_4/chapter_4_3/4.3.2.md
+        - 4.3.3  实现amb求值器: sicp/chapter_4/chapter_4_3/4.3.3.md
+      - 4.4  逻辑程序设计: 
+        - sicp/chapter_4/chapter_4_4/index.md
+        - 4.4.1  演绎信息检索: sicp/chapter_4/chapter_4_4/4.4.1.md
+        - 4.4.2  查询系统如何工作: sicp/chapter_4/chapter_4_4/4.4.2.md
+        - 4.4.3  逻辑程序设计是数理逻辑吗?: sicp/chapter_4/chapter_4_4/4.4.3.md
+        - 4.4.4  查询系统的实现: sicp/chapter_4/chapter_4_4/4.4.4.md
+    - 5  寄存器机器里的计算: 
+      - sicp/chapter_5/index.md
+      - 5.1  寄存器机器的设计: 
+        - sicp/chapter_5/chapter_5_1/index.md
+        - 5.1.1  一种描述寄存器机器的语言: sicp/chapter_5/chapter_5_1/5.1.1.md
+        - 5.1.2  机器设计的抽象: sicp/chapter_5/chapter_5_1/5.1.2.md
+        - 5.1.3  子程序: sicp/chapter_5/chapter_5_1/5.1.3.md
+        - 5.1.4  采用堆栈实现递归: sicp/chapter_5/chapter_5_1/5.1.4.md
+        - 5.1.5  指令总结: sicp/chapter_5/chapter_5_1/5.1.5.md
+      - 5.2  一个寄存器机器模拟器: 
+        - sicp/chapter_5/chapter_5_2/index.md
+        - 5.2.1  机器模型: sicp/chapter_5/chapter_5_2/5.2.1.md
+        - 5.2.2  汇编程序: sicp/chapter_5/chapter_5_2/5.2.2.md
+        - 5.2.3  为指令生成执行过程: sicp/chapter_5/chapter_5_2/5.2.3.md
+        - 5.2.4  监视机器执行: sicp/chapter_5/chapter_5_2/5.2.4.md
+      - 5.3  存储分配和废料收集: 
+        - sicp/chapter_5/chapter_5_3/index.md
+        - 5.3.1  将存储看作向量: sicp/chapter_5/chapter_5_3/5.3.1.md
+        - 5.3.2  维持一种无穷存储的假象: sicp/chapter_5/chapter_5_3/5.3.2.md
+      - 5.4  显式控制的求值器: 
+        - sicp/chapter_5/chapter_5_4/index.md
+        - 5.4.1  显式控制求值器的内核: sicp/chapter_5/chapter_5_4/5.4.1.md
+        - 5.4.2  序列的求值和尾递归: sicp/chapter_5/chapter_5_4/5.4.2.md
+        - 5.4.3  条件、赋值和定义: sicp/chapter_5/chapter_5_4/5.4.3.md
+        - 5.4.4  求值器的运行: sicp/chapter_5/chapter_5_4/5.4.4.md
+      - 5.5  编译: 
+        - sicp/chapter_5/chapter_5_5/index.md
+        - 5.5.1  编译器的结构: sicp/chapter_5/chapter_5_5/5.5.1.md
+        - 5.5.2  表达式的编译: sicp/chapter_5/chapter_5_5/5.5.2.md
+        - 5.5.3  组合式的编译: sicp/chapter_5/chapter_5_5/5.5.3.md
+        - 5.5.4  指令序列的组合: sicp/chapter_5/chapter_5_5/5.5.4.md
+        - 5.5.5  编译代码的实例: sicp/chapter_5/chapter_5_5/5.5.5.md
+        - 5.5.6  词法地址: sicp/chapter_5/chapter_5_5/5.5.6.md
+        - 5.5.7  编译代码与求值器的互连: sicp/chapter_5/chapter_5_5/5.5.7.md
+    - 参考文献: sicp/references.md
+    - 练习表: sicp/list_of_exercises.md
+    - 索引: sicp/suoyin.md
+
 
 
