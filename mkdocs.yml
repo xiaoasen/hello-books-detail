@@ -65,7 +65,8 @@ theme:
     edit: material/file-edit-outline
 
 extra:
-  homepage_books: http://192.168.200.129:8000/index_books/
+  homepage_books: http://192.168.200.129:8000/index_books
+  homepage_sicp: http://192.168.200.129:8080/sicp
 
   social:
     - icon: fontawesome/brands/github
