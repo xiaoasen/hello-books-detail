@@ -1,8 +1,10 @@
 ---
 comments: true
+title: 过程与它们所产生的计算
 ---
 
 # 1.2 Procedures and the Processes They Generate（过程与它们所产生的计算）
+
 We have now considered the elements of programming: We have used primitive arithmetic operations, we have combined these operations, and we have abstracted these composite operations by defining them as compound procedures. But that is not enough to enable us to say that we know how to program. Our situation is analogous to that of someone who has learned the rules for how the pieces move in chess but knows nothing of typical openings, tactics, or strategy. Like the novice chess player, we don’t yet know the common patterns of usage in the domain. We lack the knowledge of which moves are worth making (which procedures are worth defining). We lack the experience to predict the consequences of making a move (executing a procedure).<br>
 我们现在已经考虑了程序设计中的一些要素：使用过许多基本的算术操作，对这种操作进行组合，通过定义各种复合过程，对复合操作进行抽象。但是，即使是知道了这些，我们还不能说自己已经理解了如何去编程序。我们现在的情况就像是在学下象棋的过程中的一个阶段，此时已经知道了移动棋子的各种规则，但却还不知道典型的开局、战术和策略。就像初学象棋的人们那样，我们还不知道编程领域中各种有用的常见模式，缺少有关各种棋步的价值(值得定义哪些过程)的知识，缺少对所走棋步的各种后果(执行一个过程的效果)做出预期的经验。
 
