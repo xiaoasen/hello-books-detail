@@ -28,7 +28,7 @@ In section [2.5] we will show how to use type tags and data-directed style to de
 
 [2.1.1]: {{ config.extra.homepage_sicp }}/chapter_2/chapter_2_1/2.1.1/
 
-[2.1]: {{ config.extra.homepage_sicp }}/chapter_2/chapter_2_1/2.1.1/#Figure2.1
+[2.1]: {{ config.extra.homepage_sicp }}/chapter_2/chapter_2_1/2.1.2/#Figure2.1
 
 [2.19]: {{ config.extra.homepage_sicp }}/chapter_2/chapter_2_4/#Figure2.19
 
