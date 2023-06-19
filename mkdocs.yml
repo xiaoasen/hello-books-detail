@@ -298,6 +298,220 @@ nav:
     - 参考文献: sicp/references.md
     - 练习表: sicp/list_of_exercises.md
     - 索引: sicp/suoyin.md
-
+  - 经典力学的构造与解释:
+    - sicm/index.md
+    - 题词: sicm/dedication.md
+    - 前言: sicm/preface.md
+    - 致谢: sicm/acknowledgments.md
+    - 1 拉格朗日力学:
+      - sicm/chapter_1/index.md 
+      - 1.1 构型空间: 
+        - sicm/chapter_1/chapter_1_1/index.md
+      - 1.2 广义坐标: 
+        - sicm/chapter_1/chapter_1_2/index.md
+      - 1.3 最小作用量原理: 
+        - sicm/chapter_1/chapter_1_3/index.md
+      - 1.4 计算作用量: 
+        - sicm/chapter_1/chapter_1_4/index.md
+      - 1.5 欧拉-拉格朗日方程: 
+        - sicm/chapter_1/chapter_1_5/index.md
+        - 1.5.1 拉格朗日方程的推导: sicm/chapter_1/chapter_1_5/1.5.1.md
+        - 1.5.2 计算拉格朗日方程: sicm/chapter_1/chapter_1_5/1.5.2.md
+      - 1.6 如何找到拉格朗日量: 
+        - sicm/chapter_1/chapter_1_6/index.md
+        - 1.6.1 坐标变换: sicm/chapter_1/chapter_1_6/1.6.1.md
+        - 1.6.2 刚体约束系统: sicm/chapter_1/chapter_1_6/1.6.2.md
+        - 1.6.3 约束作为坐标变换: sicm/chapter_1/chapter_1_6/1.6.3.md
+        - 1.6.4 拉格朗日量不唯一: sicm/chapter_1/chapter_1_6/1.6.4.md
+      - 1.7 动力学状态的演化: 
+        - sicm/chapter_1/chapter_1_7/index.md
+      - 1.8 守恒量: 
+        - sicm/chapter_1/chapter_1_8/index.md
+        - 1.8.1 守恒动量: sicm/chapter_1/chapter_1_8/1.8.1.md
+        - 1.8.2 能量守恒: sicm/chapter_1/chapter_1_8/1.8.2.md
+        - 1.8.3 三维中心力场问题: sicm/chapter_1/chapter_1_8/1.8.3.md
+        - 1.8.4 限制性三体问题: sicm/chapter_1/chapter_1_8/1.8.4.md
+        - 1.8.5 诺特定理: sicm/chapter_1/chapter_1_8/1.8.5.md
+      - 1.9 路径函数的抽象化: 
+        - sicm/chapter_1/chapter_1_9/index.md
+      - 1.10 约束运动问题: 
+        - sicm/chapter_1/chapter_1_10/index.md
+        - 1.10.1 坐标约束问题: sicm/chapter_1/chapter_1_10/1.10.1.md
+        - 1.10.2 导数约束问题: sicm/chapter_1/chapter_1_10/1.10.2.md
+        - 1.10.3 非完整系统问题: sicm/chapter_1/chapter_1_10/1.10.3.md
+      - 1.11 总结: 
+        - sicm/chapter_1/chapter_1_11/index.md
+      - 1.12 项目: 
+        - sicm/chapter_1/chapter_1_12/index.md
+    - 2 刚体: 
+      - sicm/chapter_2/index.md
+      - 2.1 旋转动能: 
+        - sicm/chapter_2/chapter_2_1/index.md
+      - 2.2 旋转运动学:
+        - sicm/chapter_2/chapter_2_2/index.md 
+      - 2.3 转动惯量: 
+        - sicm/chapter_2/chapter_2_3/index.md
+      - 2.4 惯性张量: 
+        - sicm/chapter_2/chapter_2_4/index.md
+      - 2.5 主转动惯量: 
+        - sicm/chapter_2/chapter_2_5/index.md
+      - 2.6 矢量角动量: 
+        - sicm/chapter_2/chapter_2_6/index.md
+      - 2.7 欧拉角: 
+        - sicm/chapter_2/chapter_2_7/index.md
+      - 2.8 自由刚体的运动: 
+        - sicm/chapter_2/chapter_2_8/index.md
+        - 2.8.1 计算自由刚体的运动: sicm/chapter_2/chapter_2_8/2.8.1.md
+        - 2.8.2 定性特征: sicm/chapter_2/chapter_2_8/2.8.2.md
+      - 2.9 欧拉方程: 
+        - sicm/chapter_2/chapter_2_9/index.md
+      - 2.10 对称轴陀螺:
+        - sicm/chapter_2/chapter_2_10/index.md 
+      - 2.11 自旋轨道耦合: 
+        - sicm/chapter_2/chapter_2_11/index.md
+        - 2.11.1 势能的推导: sicm/chapter_2/chapter_2_11/2.11.1.md
+        - 2.11.2 月球和土卫六的自转: sicm/chapter_2/chapter_2_11/2.11.2.md
+        - 2.11.3 自旋轨道共振: sicm/chapter_2/chapter_2_11/2.11.3.md
+      - 2.12 非奇异坐标和四元数: 
+        - sicm/chapter_2/chapter_2_12/index.md
+        - 2.12.1 四元数描述下的运动学: sicm/chapter_2/chapter_2_12/2.12.1.md
+      - 2.13 总结: 
+        - sicm/chapter_2/chapter_2_13/index.md
+      - 2.14 项目: 
+        - sicm/chapter_2/chapter_2_14/index.md
+    - 3 哈密顿力学: 
+      - sicm/chapter_3/index.md
+      - 3.1 哈密顿方程组: 
+        - sicm/chapter_3/chapter_3_1/index.md
+        - 3.1.1 勒让德变换: sicm/chapter_3/chapter_3_1/3.1.1.md
+        - 3.1.2 从作用量原理出发得到哈密顿方程组: sicm/chapter_3/chapter_3_1/3.1.2.md
+        - 3.1.3 电路图法求解哈密顿方程组: sicm/chapter_3/chapter_3_1/3.1.3.md
+      - 3.2 泊松括号: 
+        - sicm/chapter_3/chapter_3_2/index.md
+      - 3.3 单自由度系统: 
+        - sicm/chapter_3/chapter_3_3/index.md
+      - 3.4 相空间降维: 
+        - sicm/chapter_3/chapter_3_4/index.md
+        - 3.4.1 拉格朗日降维法: sicm/chapter_3/chapter_3_4/3.4.1.md
+      - 3.5 相空间演化: 
+        - sicm/chapter_3/chapter_3_5/index.md
+        - 3.5.1 相空间描述的不唯一性: sicm/chapter_3/chapter_3_5/3.5.1.md
+      - 3.6 截面法: 
+        - sicm/chapter_3/chapter_3_6/index.md
+        - 3.6.1 周期驱动系统: sicm/chapter_3/chapter_3_6/3.6.1.md
+        - 3.6.2 计算闪烁截面: sicm/chapter_3/chapter_3_6/3.6.2.md
+        - 3.6.3 自主系统: sicm/chapter_3/chapter_3_6/3.6.3.md
+        - 3.6.4 计算Hénon-Heiles截面: sicm/chapter_3/chapter_3_6/3.6.4.md
+        - 3.6.5 非轴对称陀螺: sicm/chapter_3/chapter_3_6/3.6.5.md
+      - 3.7 指数发散: 
+        - sicm/chapter_3/chapter_3_7/index.md
+      - 3.8 利奥维尔定理: 
+        - sicm/chapter_3/chapter_3_8/index.md
+      - 3.9 标准映射: 
+        - sicm/chapter_3/chapter_3_9/index.md
+      - 3.10 总结: 
+        - sicm/chapter_3/chapter_3_10/index.md
+      - 3.11 项目: 
+        - sicm/chapter_3/chapter_3_11/index.md
+    - 4 相空间结构: 
+      - sicm/chapter_4/index.md
+      - 4.1 分裂相空间的出现: 
+        - sicm/chapter_4/chapter_4_1/index.md
+      - 4.2 线性稳定性: 
+        - sicm/chapter_4/chapter_4_2/index.md
+        - 4.2.1 微分方程的平衡态: sicm/chapter_4/chapter_4_2/4.2.1.md
+        - 4.2.2 映射的不动点: sicm/chapter_4/chapter_4_2/4.2.2.md
+        - 4.2.3 指数之间的关系: sicm/chapter_4/chapter_4_2/4.2.3.md
+      - 4.3 同宿纠缠: 
+        - sicm/chapter_4/chapter_4_3/index.md
+        - 4.3.1 稳定和不稳定流形的计算: sicm/chapter_4/chapter_4_3/4.3.1.md
+      - 4.4 可积系统: 
+        - sicm/chapter_4/chapter_4_4/index.md
+      - 4.5 庞加莱-比尔霍夫定理: 
+        - sicm/chapter_4/chapter_4_5/index.md
+        - 4.5.1 计算庞加莱-比尔霍夫构造: sicm/chapter_4/chapter_4_5/4.5.1.md
+      - 4.6 不变曲线:
+        - sicm/chapter_4/chapter_4_6/index.md 
+        - 4.6.1 寻找不变曲线: sicm/chapter_4/chapter_4_6/4.6.1.md
+        - 4.6.2 不变曲线的溶解: sicm/chapter_4/chapter_4_6/4.6.2.md
+      - 4.7 总结: 
+        - sicm/chapter_4/chapter_4_7/index.md
+      - 4.8 总结: 
+        - sicm/chapter_4/chapter_4_8/index.md
+    - 5 规范变换:
+      - sicm/chapter_5/index.md 
+      - 5.1 点变换: 
+        - sicm/chapter_5/chapter_5_1/index.md
+      - 5.2 一般规范变换: 
+        - sicm/chapter_5/chapter_5_2/index.md
+        - 5.2.1 时间依赖性变换: sicm/chapter_5/chapter_5_2/5.2.1.md
+        - 5.2.2 抽象规范条件: sicm/chapter_5/chapter_5_2/5.2.2.md
+      - 5.3 规范变换的不变量: 
+        - sicm/chapter_5/chapter_5_3/index.md
+      - 5.4 生成函数: 
+        - sicm/chapter_5/chapter_5_4/index.md
+        - 5.4.1 F1生成规范变换: sicm/chapter_5/chapter_5_4/5.4.1.md
+        - 5.4.2 生成函数和积分不变量: sicm/chapter_5/chapter_5_4/5.4.2.md
+        - 5.4.3 生成函数的类型: sicm/chapter_5/chapter_5_4/5.4.3.md
+        - 5.4.4 点变换: sicm/chapter_5/chapter_5_4/5.4.4.md
+        - 5.4.5 总时间导数: sicm/chapter_5/chapter_5_4/5.4.5.md
+      - 5.5 扩展相空间: 
+        - sicm/chapter_5/chapter_5_5/index.md
+        - 5.5.1 庞加莱-卡尔丹积分不变量: sicm/chapter_5/chapter_5_5/5.5.1.md
+      - 5.6 减少相空间: 
+        - sicm/chapter_5/chapter_5_6/index.md
+      - 5.7 总结: 
+        - sicm/chapter_5/chapter_5_7/index.md
+      - 5.8 项目: 
+        - sicm/chapter_5/chapter_5_8/index.md
+    - 6 规范演化:
+      - sicm/chapter_6/index.md 
+      - 6.1 哈密顿-雅可比方程:
+        - sicm/chapter_6/chapter_6_1/index.md  
+        - 6.1.1 谐振子: sicm/chapter_6/chapter_6_1/6.1.1.md  
+        - 6.1.2 哈密顿-雅可比解开普勒问题: sicm/chapter_6/chapter_6_1/6.1.2.md
+        - 6.1.3 F2和拉格朗日量: sicm/chapter_6/chapter_6_1/6.1.3.md
+        - 6.1.4 动作产生时间演化: sicm/chapter_6/chapter_6_1/6.1.4.md
+      - 6.2 时间演化是规范的: 
+        - sicm/chapter_6/chapter_6_2/index.md
+        - 6.2.1 时间演化的另一种观点: sicm/chapter_6/chapter_6_2/6.2.1.md
+        - 6.2.2 时间演化的另一种观点: sicm/chapter_6/chapter_6_2/6.2.2.md
+      - 6.3 李变换: 
+        - sicm/chapter_6/chapter_6_3/index.md
+      - 6.4 李级数: 
+        - sicm/chapter_6/chapter_6_4/index.md
+      - 6.5 指数恒等式: 
+        - sicm/chapter_6/chapter_6_5/index.md
+      - 6.6 总结: 
+        - sicm/chapter_6/chapter_6_6/index.md
+      - 6.7 项目: 
+        - sicm/chapter_6/chapter_6_7/index.md
+    - 7 规范摄动理论: 
+      - sicm/chapter_7/index.md
+      - 7.1 李级数摄动理论: 
+        - sicm/chapter_7/chapter_7_1/index.md
+      - 7.2 摆作为受扰转子:
+        - sicm/chapter_7/chapter_7_2/index.md 
+        - 7.2.1 更高阶: sicm/chapter_7/chapter_7_2/7.2.1.md
+        - 7.2.2 消除长期项: sicm/chapter_7/chapter_7_2/7.2.2.md
+      - 7.3 多自由度系统: 
+        - sicm/chapter_7/chapter_7_3/index.md
+        - 7.3.1 受驱动摆作为受扰转子: sicm/chapter_7/chapter_7_3/7.3.1.md
+      - 7.4 非线性共振: 
+        - sicm/chapter_7/chapter_7_4/index.md
+        - 7.4.1 摆近似: sicm/chapter_7/chapter_7_4/7.4.1.md
+        - 7.4.2 读取哈密顿量: sicm/chapter_7/chapter_7_4/7.4.2.md
+        - 7.4.3 共振重叠准则: sicm/chapter_7/chapter_7_4/7.4.3.md
+        - 7.4.4 更高阶摄动理论: sicm/chapter_7/chapter_7_4/7.4.4.md
+        - 7.4.5 倒立垂直平衡的稳定性: sicm/chapter_7/chapter_7_4/7.4.5.md
+      - 7.5 总结: 
+        - sicm/chapter_7/chapter_7_5/index.md
+      - 7.6 项目: 
+        - sicm/chapter_7/chapter_7_6/index.md
+    - 8 附录-方案: sicm/chapter_8/index.md
+    - 9 附录-我们的符号表示法: sicm/chapter_9/index.md
+    - 参考文献: sicm/references.md
+    - 练习列表: sicm/list_of_exercises.md
+    - 索引: sicm/suoyin.md
 
 
