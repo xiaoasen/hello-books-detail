@@ -72,10 +72,10 @@ This computation will run much more slowly than a gcd procedure written in Schem
 Exercise 5.7: Use the simulator to test the machines you designed in [Exercise 5.4].
 </div>
 
-[5.5]: {{ config.extra.homepage_sicp }}/chapter5/chapter_5_5/
+[5.5]: {{ config.extra.homepage_sicp }}/chapter_5/chapter_5_5/
 
-[5.1.1]: {{ config.extra.homepage_sicp }}/chapter5/chapter_5_1/5.1.1
+[5.1.1]: {{ config.extra.homepage_sicp }}/chapter_5/chapter_5_1/5.1.1
 
-[5.1]: {{ config.extra.homepage_sicp }}/chapter5/chapter_5_1/
+[5.1]: {{ config.extra.homepage_sicp }}/chapter_5/chapter_5_1/
 
-[Exercise 5.4]: {{ config.extra.homepage_sicp }}/chapter5/chapter_5_1/5.1.4/#Exercise5.4
+[Exercise 5.4]: {{ config.extra.homepage_sicp }}/chapter_5/chapter_5_1/5.1.4/#Exercise5.4
