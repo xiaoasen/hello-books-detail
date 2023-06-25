@@ -17,7 +17,7 @@ These two rules describe the essence of the evaluation process, a basic cycle in
 <figure markdown>
   ![](../assets/Fig4.1.svg)
   <figcaption markdown>
-  Figure 4.1: The eval-apply cycle exposes the essence of a computer language.
+  Figure 4.1: The `eval-apply` cycle exposes the essence of a computer language.
   </figcaption>
 </figure>
 </div>
