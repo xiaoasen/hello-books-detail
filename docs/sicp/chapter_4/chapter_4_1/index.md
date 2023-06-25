@@ -1,4 +1,8 @@
-4.1The Metacircular Evaluator
+---
+comments: true
+---
+
+# 4.1 The Metacircular Evaluator
 Our evaluator for Lisp will be implemented as a Lisp program. It may seem circular to think about evaluating Lisp programs using an evaluator that is itself implemented in Lisp. However, evaluation is a process, so it is appropriate to describe the evaluation process using Lisp, which, after all, is our tool for describing processes.207 An evaluator that is written in the same language that it evaluates is said to be metacircular.
 
 The metacircular evaluator is essentially a Scheme formulation of the environment model of evaluation described in 3.2. Recall that the model has two basic parts:
