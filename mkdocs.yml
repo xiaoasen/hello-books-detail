@@ -40,7 +40,7 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    - toc.integrate
+    # - toc.integrate
   palette:
     - scheme: default
       primary: white
@@ -114,7 +114,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.keys
-   # - pymdownx.magiclink:
+  # - pymdownx.magiclink:
   #     repo_url_shorthand: true
   #     user: squidfunk
   #     repo: mkdocs-material
@@ -513,5 +513,59 @@ nav:
     - 参考文献: sicm/references.md
     - 练习列表: sicm/list_of_exercises.md
     - 索引: sicm/suoyin.md
-
-
+  - 计算机程序的构造与解释课程:
+    - course_sicp/index.md
+    - 1 Lisp概览:
+      - course_sicp/chapter_1/index.md
+      - 1.1 计算机的本质(Computer Science):
+        - course_sicp/chapter_1/chapter_1_1/index.md
+      - 1.2 计算过程(Process)和规则模式(Procedure):
+        - course_sicp/chapter_1/chapter_1_2/index.md
+      - 1.3 控制复杂度的技术(Techniques For Controlling Complexity):
+        - course_sicp/chapter_1/chapter_1_3/index.md
+        - 1.3.1 黑盒抽象(Black-Box Abstraction): course_sicp/chapter_1/chapter_1_3/1.3.1.md
+        - 1.3.2 约定接口(Conventional Interfaces): course_sicp/chapter_1/chapter_1_3/1.3.2.md
+        - 1.3.3 元语言抽象(Metalinguistic Abstraction): course_sicp/chapter_1/chapter_1_3/1.3.3.md
+      - 1.4 计算机程序语言:
+        - course_sicp/chapter_1/chapter_1_4/index.md
+        - 1.4.1 基本元素(Primitive Elements): course_sicp/chapter_1/chapter_1_4/1.4.1.md
+        - 1.4.2 组合方法(Means Of Combination): course_sicp/chapter_1/chapter_1_4/1.4.2.md
+        - 1.4.3 抽象方法(Means Of Abstraction): course_sicp/chapter_1/chapter_1_4/1.4.3.md
+      - 1.5 实例--求平方根:
+        - course_sicp/chapter_1/chapter_1_5/index.md
+        - 1.5.1 递归定义(Recursive Definition): course_sicp/chapter_1/chapter_1_5/1.5.1.md
+        - 1.5.2 块结构(Block Structure): course_sicp/chapter_1/chapter_1_5/1.5.2.md
+    - 2 计算过程:
+      - course_sicp/chapter_2/index.md
+    - 3 高阶过程:
+      - course_sicp/chapter_3/index.md
+    - 4 复合数据:
+      - course_sicp/chapter_4/index.md
+    - 5 图形界面:
+      - course_sicp/chapter_5/index.md
+    - 6 符号化求导系统:
+      - course_sicp/chapter_6/index.md
+    - 7 模式匹配:
+      - course_sicp/chapter_7/index.md
+    - 8 通用运算符:
+      - course_sicp/chapter_8/index.md
+    - 9 赋值，状态和副作用:
+      - course_sicp/chapter_9/index.md
+    - 10 计算对象:
+      - course_sicp/chapter_10/index.md
+    - 11 流:
+      - course_sicp/chapter_11/index.md
+    - 12 元循环求值器:
+      - course_sicp/chapter_12/index.md
+    - 13 逻辑式程序设计:
+      - course_sicp/chapter_13/index.md
+    - 14 计算机设计:
+      - course_sicp/chapter_14/index.md
+      - 14.1 寄存机器:
+        - course_sicp/chapter_14/chapter_14_1/index.md
+      - 14.2 显示控制求值器:
+        - course_sicp/chapter_14/chapter_14_2/index.md
+      - 14.3 编译:
+        - course_sicp/chapter_14/chapter_14_3/index.md
+      - 14.4 存储分配与垃圾收集:    
+        - course_sicp/chapter_14/chapter_14_4/index.md 
