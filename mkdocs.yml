@@ -515,27 +515,9 @@ nav:
     - 索引: sicm/suoyin.md
   - 计算机程序的构造与解释课程:
     - course_sicp/index.md
-    - 1 Lisp概览:
+    - 1 计算机的本质:
       - course_sicp/chapter_1/index.md
-      - 1.1 计算机的本质(Computer Science):
-        - course_sicp/chapter_1/chapter_1_1/index.md
-      - 1.2 计算过程(Process)和规则模式(Procedure):
-        - course_sicp/chapter_1/chapter_1_2/index.md
-      - 1.3 控制复杂度的技术(Techniques For Controlling Complexity):
-        - course_sicp/chapter_1/chapter_1_3/index.md
-        - 1.3.1 黑盒抽象(Black-Box Abstraction): course_sicp/chapter_1/chapter_1_3/1.3.1.md
-        - 1.3.2 约定接口(Conventional Interfaces): course_sicp/chapter_1/chapter_1_3/1.3.2.md
-        - 1.3.3 元语言抽象(Metalinguistic Abstraction): course_sicp/chapter_1/chapter_1_3/1.3.3.md
-      - 1.4 计算机程序语言:
-        - course_sicp/chapter_1/chapter_1_4/index.md
-        - 1.4.1 基本元素(Primitive Elements): course_sicp/chapter_1/chapter_1_4/1.4.1.md
-        - 1.4.2 组合方法(Means Of Combination): course_sicp/chapter_1/chapter_1_4/1.4.2.md
-        - 1.4.3 抽象方法(Means Of Abstraction): course_sicp/chapter_1/chapter_1_4/1.4.3.md
-      - 1.5 实例--求平方根:
-        - course_sicp/chapter_1/chapter_1_5/index.md
-        - 1.5.1 递归定义(Recursive Definition): course_sicp/chapter_1/chapter_1_5/1.5.1.md
-        - 1.5.2 块结构(Block Structure): course_sicp/chapter_1/chapter_1_5/1.5.2.md
-    - 2 计算过程:
+    - 2 程序的形状:
       - course_sicp/chapter_2/index.md
     - 3 高阶过程:
       - course_sicp/chapter_3/index.md
