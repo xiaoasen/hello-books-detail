@@ -1,3 +1,42 @@
+chatgptw问法：
+把下列的代码转化为python代码：
+(define factorial
+  (lambda (n)
+    (if (= n 1)
+        1
+        (* n (factorial (- n 1))))))
+
+(display (factorial 6))
+
+
+把下面的代码转化为C#代码
+; 基本数据
+(display 3) ; 整数: 3
+(newline)
+(display 7.5) ; 小数: 7.5
+(newline)
+(display 'A) ;字符: A
+(newline)
+(display #t) ;布尔值: #t或者#f
+(newline)
+
+把下面的代码转化为Python代码,要有注释：
+
+
+
+类型推导
+The little scheme preface
+htdp:Prologue: How to Program
+寄存器机器
+数据、操作过程
+基本数据还有Boolean
+类型<a little java>：A type is a name for a collection of values
+面向对象《编程的宗派》 https://www.yinwang.org/blog-cn/2015/04/03/paradigms
+控制复杂度的技术
+数据结构
+语言特性
+
+
 Ground-Up Computer Science
 一、Functions
 
@@ -38,6 +77,12 @@ lookup-table、key-value、key-value-store、databases、key-value-pair、recurs
 
 七、Interpreter
 interpreter、language、abstract-syntax-trees、literal-values、growing、environment、undefined-variables、all-possibilities、abstract-interfaces、substitution、free-variable、
+
+1、Datatype Definitions
+2、Structure of the interpreter
+3、Variables
+4、Functions
+5、Calls
 
 
 
@@ -683,3 +728,15 @@ Normal-order evaluation Vs Applicative-Order
 正则序：拖尾问题
 
 函数式和命令式
+
+十一、元循环求值器
+
+1、机器描述
+通用机器
+保留字
+
+2、测试 eval-apply
+手动替换
+
+3不动点/Y算子，lambda演算
+
