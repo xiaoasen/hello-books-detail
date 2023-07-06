@@ -33,8 +33,11 @@ htdp:Prologue: How to Program
 类型<a little java>：A type is a name for a collection of values
 面向对象《编程的宗派》 https://www.yinwang.org/blog-cn/2015/04/03/paradigms
 控制复杂度的技术
-数据结构
+数据结构《你好，算法》：乐高积木对应于数据，积木形状和连接方式代表数据结构，拼装积木的步骤则对应算法。
 语言特性
+复合数据：通过组合出来得到的数据，不是基本数据（整数、浮点数、字符、布尔值），比如构造有理数 4/7 就不是基本数据了。所以它是有理数。又比如说一张图像也是一个复合数据。在函数式编程里，复合数据就是一个函数，在面向对象编程里，复合数据就是一个对象
+
+操作符抽象：比如说 “加号” ：数字相加、字符相加、逻辑门相加等等
 
 
 Ground-Up Computer Science
