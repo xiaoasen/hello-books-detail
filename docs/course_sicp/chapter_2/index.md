@@ -235,3 +235,66 @@ comments: true
 (+ 9 16)
 25
 ```
+
+
+## 皮亚诺算术-迭代
+
+=== "Scheme"
+	```
+	; 定义: 皮亚诺算术-迭代版本
+	(define (add x y)
+	  (if (= x 0)
+		  y
+		  (add (- 1 x) (+ 1 y))))
+	; 测试: (+ 3 4) => 7
+	(display (+ 3 4))
+	```
+	
+## 皮亚诺算术-递归
+
+=== "Scheme"
+	```
+	; 定义: 皮亚诺算术-递归版本
+		(define (add x y)
+		  (if (= x 0)
+			  y
+			  (+ 1 (add (- 1 x) y))))
+	; 测试: (+ 3 4) => 7
+	(display (+ 3 4))
+	```
+
+## 斐波那契数列
+
+=== "Scheme"
+	```
+	; 定义: 斐波那契数列
+	(define (fib n)
+	  (if (< n 2)
+		  n
+		  (+ (fib (- n 1))
+			 (fib (- n 2)))))
+	; 测试: (fib 8) => 21
+	(display (fib 8))
+	```
+
+## 汉诺塔
+
+=== "Scheme"
+	```
+	; 定义: 汉诺塔
+	(define (move n from to spare)
+		  (cond ((= n 0) "done")
+				(else
+				 (move (- n 1) from spare to)
+				 (print-move n from to)
+				 (move (- n 1) spare to from))))
+
+	; 定义: 打印
+	(define (print-move n from to)
+	  (display (string-append "移动盘 " (number->string n) " 从 " from " 到 " to))
+	  (newline))
+
+	; 测试: (move 3 "a" "c" "b")
+	(move 3 "a" "c" "b")
+	```
+
