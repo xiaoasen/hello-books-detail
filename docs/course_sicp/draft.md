@@ -1,5 +1,5 @@
 课程名：程序员的自我修养
-程序员：念咒语的魔法师
+程序员：念咒语的魔法师, 编写咒语
 
 保留字：
 一、Scheme
@@ -19,7 +19,9 @@ not: logical not operator.
 定义和声明的区别：定义是有值，声明是没有值
 
 
-
+(define atom?
+  (lambda (x)
+    (and (not (pair? x)) (not (null? x)))))
 
 chatgptw问法：
 把下列的代码转化为python代码：
