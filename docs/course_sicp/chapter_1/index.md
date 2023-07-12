@@ -4,138 +4,128 @@ comments: true
 
 # 计算机的本质
 
-当你是一个小孩时，有时父母会考考你的算术，比如说他们问你：
+当你是一个小孩时，有时父母会考考你的算术，比如说他们问你：1 + 1 等于多少？你掰着你的手指算出了:2
+
+<div id="Fig1.1" markdown>
+<figure markdown>
+  ![](../assets/Fig1.1.png)
+  <figcaption markdown>
+  考一考你
+  </figcaption>
+</figure>
+</div>
+
+他们“抛出”一条 **表达式**—— **1 + 1**，然后你来 **计算** 出这条 **表达式** 的 **值**—— **2**。现在交换一下角色，用电脑的浏览器打开一个在线开发集成环境(IDE: Integrated Development Environment)，比如 [Jdoodle](https://www.jdoodle.com/)，选择 `NodeJs`，然后在打开页面的编辑框里写入 `console.log(1 + 1);`,再点击`Execute`,下面的黑色框里就会出现结果`2`：
+
+<div id="Fig1.3" markdown>
+<figure markdown>
+  ![](../assets/Fig1.3.jpg)
+  <figcaption markdown>
+  在线编译器和编辑器
+  </figcaption>
+</figure>
+</div>
+
+<div id="Fig1.4" markdown>
+<figure markdown>
+  ![](../assets/Fig1.4.jpg)
+  <figcaption markdown>
+  在线NodeJs开发集成环境
+  </figcaption>
+</figure>
+</div>
+
+
+在这里，你变成了你父母的角色，也就是“抛出” **表达式**，而这个在线IDE变成你原来的角色：**计算** 出 **表达式** 的值。由此可见，**计算机** 顾名思义是一种 **计算** 工具。
+
+<div id="Fig1.2" markdown>
+<figure markdown>
+  ![](../assets/Fig1.2.png)
+  <figcaption markdown>
+  一名程序员
+  </figcaption>
+</figure>
+</div>
+
+计算机可以很快地计算出`1+1`的值，它还能计算复杂的东西，比如：计算 **最大公约数** (GCD: Greatest Common Divisor)。**最大公约数** 在数学中是这样定义的：
 
 ```
-1 + 1 
+两个整数a和b的最大公约数(GCD)除尽这两个数的那个最大的整数
 ```
 
-等于多少？你掰着你的手指算出了:
 
-```
-2
-```
+这个定义只告诉你 **最大公约数** 是什么，却没有告诉你如何去求取一个 **最大公约数**。那么如何求一个 **最大公约数** 呢？大约公元前300年欧几里得提出了一个 **欧几里得算法**：
 
-他们抛出了一条 **式子**—— **1 + 1**，然后你来 **计算** 出这条 **式子** 的 **值**—— **2**。现在交换一下角色，用电脑的浏览器打开一个在线IDE，比如 [Jdoodle](https://www.jdoodle.com/)，选择Nodejs，然后在打开页面的编辑框里写入
-
-```
-console.log(1 + 1);
-
-```
-再点击下面的 **Execute**，就会在下面的黑色框里面出现了 **2**。在这里，你变成了你父母的角色，也就是抛出 **式子**，而这个在线IDE变成你原来的角色：**计算** 出 **式子** 的值。由此可见，**计算机** 顾名思义是一种 **计算** 工具。
-
-计算机可以很快地计算出`1+1`的值，它还能计算复杂的东西，比如：计算 **平方根**。**平方根** 在数学中是这样定义的：
-
-$$
-\sqrt{x}\;\; = {\rm\;\; 那样的} y， 
-{\rm\;\; 使得} y \ge 0 {\rm\;\; 而且} y^2 = x.
-$$
-
-这个定义只告诉你平方根是什么，却没有告诉你如何去求取一个平方根。那么如何求一个平方根呢？公元一世纪亚历山大的Heron提出了一个 **连续取均值求平方根法**：
-
-```
-为了求出平方根：
-1. 给出一个猜测值guess
-2. 不断改进猜测值guess，改进的方法是：不断求猜测值guess与x/guess的平均值
-3. 通过不断改进，直到它足够精确停止计算，比如说小于0.0001就停止下来
-```
-
-要表达上面的 **连续取均值求平方根法**，有三个明显的选择：
+要表达上面的 **欧几里得算法**，有三个明显的选择：
 
 - 自然语言，例如：中文。自然语言是模糊两可的，不精确的，有时笨拙且冗长。
 
+```
+如果r是a除以b的余数，那么a和b的公约数正好也是b和r的公约数，也就是下面这个等式：
+
+GCD(a, b) = GCD(b, r)
+
+这样就把GCD的计算问题连续归约到越来越小的整数对的GCD计算问题。例如：
+
+GCD(206,40) = GCD(40,6)
+            = GCD(6,4)
+            = GCD(4,2)
+            = GCD(2,0) = 2
+
+将GCD(206, 40)归约到GCD(2, 0), 最终得到2
+```
+
 - 数学语言，跟自然语言刚好相反：它能用很少的几个符号来表达形式化的思想，但是数学语言往往是神秘高深的，如果没有特殊的训练，就几乎无法理解。
 
-有没有一种语言能同时克服上面两种语言的缺点来表达 **连续取均值求平方根法** ？下面来看一下这种表达式子：
+```
+GCD(206,40) = GCD(40,6)
+            = GCD(6,4)
+            = GCD(4,2)
+            = GCD(2,0) = 2
+```
+
+- 图形语言。直观，便于理解，但是其占用的空间大，且很难描述复杂的东西。
+
+![](../assets/Fig1.5.svg)
+
+
+有没有一种语言能同时克服上面两种语言的缺点来表达 **欧几里得算法** ？下面来看一下这种表达式子：
 
 === "Scheme"
-    ```
-    ; 求 x 的平方根
-    ; 1. 基本元素（包括基本数据和基本过程）
-    ; (1) 0.0001、1、2、16-->基本的数据
-    ; (2) +、-、*、/、abs、<、display-->基本过程
-    ; 2. 组合方法
-    ; (1) if --> 用于条件判断
-    ; 3. 抽象方法
-    ; (1) define --> 给某个东西命名
-
-	(define (sqrt-approx x)
-      ; (2) 不断改进猜测值 guess
-	  (define (improve-guess guess)
-		(/ (+ guess (/ x guess)) 2))
-	  ; (3) 猜测值guess是否足够好？阈值是：0.0001
-	  (define (good-enough? guess)
-		(< (abs (- (* guess guess) x)) 0.0001))
-	
-	  (define (sqrt-iter guess)
-		(if (good-enough? guess)
-			guess ;返回结果
-			(sqrt-iter (improve-guess guess))))
-      ; (1) 给出一个猜测值1      
-	  (sqrt-iter 1.0))
-
-	; 测试16的平方根，输出：4.000000636692939
-	(display (sqrt-approx 16)) 
+	```
+	(define (gcd a b)
+	  (if (= b 0)
+		  a
+		  (gcd b (remainder a b))))
+	  
+	(display (gcd 206 40)) 
 	```
 
 === "Python"
 	```
-	# 求 x 的平方根
-    # 1. 基本元素（包括基本数据和基本过程）
-    # (1) 0.0001、1、2、16-->基本的数据
-    # (2) +、-、*、/、=、abs、>、print-->基本过程
-    # 2. 组合方法
-    # (1) while --> 用于循环
-    # 3. 抽象方法
-    # (1) def --> 给某个东西命名
-	def sqrt_approx(x):
-		# (1) 给出一个猜测值1
-		guess = 1
-		
-		# (3) 猜测值guess是否足够好？阈值是：0.0001
-		while abs(guess*guess - x) > 0.0001:
-			# (2) 不断改进猜测值 guess
-			guess = (guess + x/guess) / 2
-		
-		# 返回结果
-		return guess
-
-	# 测试16的平方根，输出：4.000000636692939
-	print(sqrt_approx(16)) 
+	def gcd(a, b):
+		if b == 0:
+			return a
+		else:
+			return gcd(b, a % b)
+			
+	print(gcd(206, 40))
 	```    
 	
 === "C"
 	```
 	#include <stdio.h>
-	#include <math.h>
 
-    /* 求 x 的平方根
-    1. 基本元素（包括基本数据和基本过程）
-    (1) 0.0001、1.0、2.0、16.0-->基本的数据
-    (2) +、-、*、/、=、fabs、>、print-->基本过程
-    2. 组合方法
-    (1) while --> 用于循环
-    3. 抽象方法
-    (1) double；int --> 给某个东西命名以及定义为某种类型
-    */
-	double sqrt_approx(double x) {
-        //(1) 给出一个猜测值：1，和一个"足够好的"阈值：0.0001
-		double guess = 1.0;
-		double epsilon = 0.0001;
-        // (3) 猜测值guess是否足够好？
-		while (fabs(guess*guess - x) > epsilon) {
-            // (2) 不断改进猜测值 guess
-			guess = (guess + x/guess) / 2.0;
+	int gcd(int a, int b) {
+		if (b == 0) {
+			return a;
+		} else {
+			return gcd(b, a % b);
 		}
-		
-        // 返回结果
-		return guess;
 	}
 
 	int main() {
-        //测试16的平方根，输出：4.00001
-		double x = 16.0;
-		printf("%f", sqrt_approx(x)); 
+		printf("%d\n", gcd(206, 40));  // 应该输出 2
 		return 0;
 	}
 	```
@@ -143,71 +133,34 @@ $$
 === "C++"
 	```
 	#include <iostream>
-	#include <cmath>
 
-    /* 求 x 的平方根
-    1. 基本元素（包括基本数据和基本过程）
-    (1) 0.0001、1.0、2.0、16.0-->基本的数据
-    (2) +、-、*、/、=、fabs、>、cout-->基本过程
-    2. 组合方法
-    (1) while --> 用于循环
-    3. 抽象方法
-    (1) double；int --> 给某个东西命名以及定义为某种类型
-    */
-	double sqrt_approx(double x) {
-        //(1) 给出一个猜测值：1，和一个"足够好的"阈值：0.0001
-		double guess = 1.0;
-		double epsilon = 0.0001;
-		
-        // (3) 猜测值guess是否足够好？
-		while (std::fabs(guess*guess - x) > epsilon) {
-            // (2) 不断改进猜测值 guess
-			guess = (guess + x/guess) / 2.0;
+	int gcd(int a, int b) {
+		if (b == 0) {
+			return a;
+		} else {
+			return gcd(b, a % b);
 		}
-		
-        // 返回结果
-		return guess;
 	}
 
 	int main() {
-        //测试16的平方根，输出：4
-		double x = 16.0;
-		std::cout << sqrt_approx(x) << std::endl; 
+		std::cout << gcd(206, 40) << std::endl;  // 应该输出 2
 		return 0;
 	}
 	```	
 	
 === "Java"
 	```
-	public class Main {
-		/* 求 x 的平方根
-        1. 基本元素（包括基本数据和基本过程）
-        (1) 0.0001、1.0、2.0、16.0-->基本的数据
-        (2) +、-、*、/、=、abs、>、println-->基本过程
-        2. 组合方法
-        (1) while --> 用于循环
-        3. 抽象方法
-        (1) double、void --> 给某个东西命名以及定义为某种类型
-        */
-		public static double sqrt_approx(double x) {
-			//(1) 给出一个猜测值：1，和一个"足够好的"阈值：0.0001
-			double guess = 1.0;
-			double epsilon = 0.0001;
-			
-			// (3) 猜测值guess是否足够好？
-			while (Math.abs(guess*guess - x) > epsilon) {
-				// (2) 不断改进猜测值 guess
-				guess = (guess + x/guess) / 2.0;
+	public class GCD {
+		public static int gcd(int a, int b) {
+			if (b == 0) {
+				return a;
+			} else {
+				return gcd(b, a % b);
 			}
-			
-			// 返回结果
-			return guess;
 		}
-		
+
 		public static void main(String[] args) {
-			//测试16的平方根，输出：4.000000636692939
-			double x = 16.0;
-			System.out.println(sqrt_approx(x));
+			System.out.println(gcd(206, 40));  // 应该输出 2
 		}
 	}
 	```
@@ -216,201 +169,93 @@ $$
 	```
 	using System;
 
-	public class MyClass {
-		/* 求 x 的平方根
-        1. 基本元素（包括基本数据和基本过程）
-        (1) 0.0001、1.0、2.0、16.0-->基本的数据
-        (2) +、-、*、/、=、Abs、>、WriteLine-->基本过程
-        2. 组合方法
-        (1) while --> 用于循环
-        3. 抽象方法
-        (1) double、void --> 给某个东西命名以及定义为某种类型
-        */
-		public static double sqrt_approx(double x) {
-			//(1) 给出一个猜测值：1，和一个"足够好的"阈值：0.0001
-			double guess = 1.0;
-			double epsilon = 0.0001;
-			
-			// (3) 猜测值guess是否足够好？
-			while (Math.Abs(guess*guess - x) > epsilon) {
-				// (2) 不断改进猜测值 guess
-				guess = (guess + x/guess) / 2.0;
+	class GCD {
+		static int gcd(int a, int b) {
+			if (b == 0) {
+				return a;
+			} else {
+				return gcd(b, a % b);
 			}
-			
-			// 返回结果
-			return guess;
 		}
-		
-		public static void Main(string[] args) {
-			//测试16的平方根，输出：4.00000063669294
-			double x = 16.0;
-			Console.WriteLine(sqrt_approx(x)); 
+
+		static void Main(string[] args) {
+			Console.WriteLine(gcd(206, 40));  // 应该输出 2
 		}
-	}
+	}	
 	```	
 	
 === "PHP"
 	```
 	<?php
-		
-	/* 求 x 的平方根
-    1. 基本元素（包括基本数据和基本过程）
-    (1) 0.0001、1.0、2.0、16.0-->基本的数据
-    (2) +、-、*、/、=、abs、>、echo-->基本过程
-    2. 组合方法
-    (1) while --> 用于循环
-    3. 抽象方法
-    (1) $、function --> 给某个东西命名
-    */
-	function sqrt_approx($x) {
-		//(1) 给出一个猜测值：1，和一个"足够好的"阈值：0.0001
-		$guess = 1.0;
-		$epsilon = 0.0001;
-		
-		// (3) 猜测值guess是否足够好？
-		while (abs($guess*$guess - $x) > $epsilon) {
-			// (2) 不断改进猜测值 guess
-			$guess = ($guess + $x/$guess) / 2.0;
+	function gcd($a, $b) {
+		if ($b == 0) {
+			return $a;
+		} else {
+			return gcd($b, $a % $b);
 		}
-		
-		// 返回结果
-		return $guess;
 	}
 
-	//测试16的平方根，输出：4.0000006366929
-	$x = 16.0;
-	echo sqrt_approx($x);
-
-	?>
+	echo gcd(206, 40);  // 应该输出 2
+	?>	
 	```	
 
 === "JavaScript"
 	```
-	/* 求 x 的平方根
-    1. 基本元素（包括基本数据和基本过程）
-    (1) 0.0001、1.0、2.0、16.0-->基本的数据
-    (2) +、-、*、/、=、abs、>、log-->基本过程
-    2. 组合方法
-    (1) while --> 用于循环
-    3. 抽象方法
-    (1) let、function --> 给某个东西命名
-    */ 
-	function sqrt_approx(x) {
-		//(1) 给出一个猜测值：1，和一个"足够好的"阈值：0.0001
-		let guess = 1.0;
-		let epsilon = 0.0001;
-		
-		// (3) 猜测值guess是否足够好？
-		while (Math.abs(guess*guess - x) > epsilon) {
-			// (2) 不断改进猜测值 guess
-			guess = (guess + x/guess) / 2.0;
+	function gcd(a, b) {
+		if (b === 0) {
+			return a;
+		} else {
+			return gcd(b, a % b);
 		}
-		
-		// 返回结果
-		return guess;
 	}
 
-	//测试16的平方根，输出：4.000000636692939
-	let x = 16.0;
-	console.log(sqrt_approx(x)); 
+	console.log(gcd(206, 40));  // 应该输出 2
 	```
 	
 === "Go"
 	```
 	package main
 
-	import (
-		"fmt"
-		"math"
-	)
+	import "fmt"
 
-	/* 求 x 的平方根
-    1. 基本元素（包括基本数据和基本过程）
-    (1) 0.0001、1.0、2.0、16.0-->基本的数据
-    (2) +、-、*、/、:=、Abs、>、Println-->基本过程
-    2. 组合方法
-    (1) while --> 用于循环
-    3. 抽象方法
-    (1) func、float64 --> 给某个东西命名以及定义为某种类型
-    */  
-	func sqrt_approx(x float64) float64 {
-		//(1) 给出一个猜测值：1，和一个"足够好的"阈值：0.0001
-		guess := 1.0
-		epsilon := 0.0001
-		// (3) 猜测值guess是否足够好？
-		for math.Abs(guess*guess - x) > epsilon {
-			// (2) 不断改进猜测值 guess
-			guess = (guess + x/guess) / 2.0
+	func gcd(a, b int) int {
+		if b == 0 {
+			return a
+		} else {
+			return gcd(b, a%b)
 		}
-		// 返回结果
-		return guess
 	}
 
 	func main() {
-		//测试16的平方根，输出：4.000000636692939
-		x := 16.0
-		fmt.Println(sqrt_approx(x)) 
+		fmt.Println(gcd(206, 40))  // 应该输出 2
 	}
 	```
 
 === "Swift"
 	```
-	/* 求 x 的平方根
-    1. 基本元素（包括基本数据和基本过程）
-    (1) 0.0001、1.0、2.0、16.0-->基本的数据
-    (2) +、-、*、/、=、abs、>、print-->基本过程
-    2. 组合方法
-    (1) while --> 用于循环
-    3. 抽象方法
-    (1) func、Double --> 给某个东西命名以及定义为某种类型
-    (2) let-->给某个东西命名以及赋予某个值
-    */ 
-	func sqrt_approx(x: Double) -> Double {
-		//(1) 给出一个猜测值：1，和一个"足够好的"阈值：0.0001
-		var guess = 1.0
-		let epsilon = 0.0001
-		// (3) 猜测值guess是否足够好？
-		while abs(guess*guess - x) > epsilon {
-			// (2) 不断改进猜测值 guess
-			guess = (guess + x/guess) / 2.0
+	func gcd(_ a: Int, _ b: Int) -> Int {
+		if b == 0 {
+			return a
+		} else {
+			return gcd(b, a % b)
 		}
-		// 返回结果
-		return guess
 	}
-	//测试16的平方根，输出：4.000000636692939
-	let x = 16.0
-	print(sqrt_approx(x: x)) 
+
+	print(gcd(206, 40))  // 应该输出 2 
 	```
 
 === "Kotlin"
 	```
-	/* 求 x 的平方根
-    1. 基本元素（包括基本数据和基本过程）
-    (1) 0.0001、1.0、2.0、16.0-->基本的数据
-    (2) +、-、*、/、=、abs、>、println-->基本过程
-    2. 组合方法
-    (1) while --> 用于循环
-    3. 抽象方法
-    (1) fun、Double、var、val --> 给某个东西命名以及定义为某种类型
-    */ 
-	fun sqrt_approx(x: Double): Double {
-		//(1) 给出一个猜测值：1，和一个"足够好的"阈值：0.0001
-		var guess = 1.0
-		val epsilon = 0.0001
-		
-		// (3) 猜测值guess是否足够好？
-		while (Math.abs(guess*guess - x) > epsilon) {
-			// (2) 不断改进猜测值 guess
-			guess = (guess + x/guess) / 2.0
+	fun gcd(a: Int, b: Int): Int {
+		if (b == 0) {
+			return a
+		} else {
+			return gcd(b, a % b)
 		}
-		// 返回结果
-		return guess
 	}
 
 	fun main() {
-		//测试16的平方根，输出：4.000000636692939
-		val x = 16.0
-		println(sqrt_approx(x)) 
+		println(gcd(206, 40))  // 应该输出 2
 	}
 	```
 !!! 备注
@@ -428,6 +273,11 @@ $$
   ![](../assets/bug.jpg)
   <figcaption>图1</figcaption>
 </figure>
+
+
+程序语言是一种表达思想的重要媒介，它能表达和解决数学的问题，甚至比数学语言更优雅，它还能做表达和解决其它的问题，比如物理问题、工程问题、艺术问题、经济问题、社会问题：电路分析
+
+
 
 
 一种语言区别于另一种语言，在于它们之间不同的规则模式。当有人要向你展示一门新程序语言时， 你应该问他：

@@ -1,5 +1,35 @@
 课程名：程序员的自我修养
 程序员：念咒语的魔法师, 编写咒语
+解释器：基本元素：表达式，组合方法：eval/apply？抽象方法：？
+
+SICP实例：
+牛顿法求平方根
+素数检测
+
+自动求微分（导数）：不知道导数函数是啥，知道其它，然后要求出导数，跟逻辑编程类似
+
+The Computer revolution is a revolution in the way we think and in the way we express what we think
+
+写解释器的作用：探讨语言设计的问题
+
+机器可以用任何可行的技术实现，比如集成电路，激光，分子，DNA…… 但是无论用什么作为机器的材料，我们所要表达的语义，也就是计算的本质，却是不变的。
+
+先预览 ，后操作
+
+Racket在命令行中使用load函数
+
+sicp里面assemble是为了模拟其自定义的机器语言，也即是下面的转化关系：
+
+assemble：自定义机器语言---->现有机器上能运行的某种语言（比如Lisp、NASM、C语言等等）
+
+compiler： Lisp程序--->自定义机器语言：运行一次Lisp程序，然后一次翻译成自定义机器语言，后面再运行这个Lisp程序，就直接执行翻译好的自定义机器语言了
+
+interpreter: Lisp程序--->自定义机器语言：每运行一次，就翻译一次，把Lisp程序翻译为自定义机器语言
+
+assq 是 Association List 中的查询操作的缩写，其中 "Assoc" 表示 "Association"，意为关联，"List" 表示列表。在 Scheme 中，Association List 是一种基本的数据结构，用于表示键值对的列表。 assq 过程用于在 Association List 中查找指定键的键值对。
+q:query
+
+
 
 保留字：
 一、Scheme
