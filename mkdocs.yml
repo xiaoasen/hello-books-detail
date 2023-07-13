@@ -515,19 +515,19 @@ nav:
     - 索引: sicm/suoyin.md
   - 计算机程序的构造与解释课程:
     - course_sicp/index.md
-    - 1 计算机的本质:
+    - 1 计算的本质:
       - course_sicp/chapter_1/index.md
-    - 2 程序的形状:
+    - 2 数据和变量:
       - course_sicp/chapter_2/index.md
-    - 3 高阶过程:
+    - 3 组合和抽象:
       - course_sicp/chapter_3/index.md
-    - 4 复合数据:
+    - 4 复合的数据:
       - course_sicp/chapter_4/index.md
-    - 5 图形界面:
+    - 5 数据的类型:
       - course_sicp/chapter_5/index.md
-    - 6 符号化求导系统:
+    - 6 数据的结构:
       - course_sicp/chapter_6/index.md
-    - 7 模式匹配:
+    - 7 数据的结构:
       - course_sicp/chapter_7/index.md
     - 8 通用运算符:
       - course_sicp/chapter_8/index.md
