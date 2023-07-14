@@ -523,31 +523,21 @@ nav:
       - course_sicp/chapter_3/index.md
     - 4 复合的数据:
       - course_sicp/chapter_4/index.md
-    - 5 数据的类型:
+    - 5 高阶的函数:
       - course_sicp/chapter_5/index.md
-    - 6 数据的结构:
+    - 6 数据的类型:
       - course_sicp/chapter_6/index.md
-    - 7 数据的结构:
+    - 7 模式的匹配:
       - course_sicp/chapter_7/index.md
-    - 8 通用运算符:
+    - 8 赋值的作用:
       - course_sicp/chapter_8/index.md
-    - 9 赋值，状态和副作用:
+    - 9 对象的计算:
       - course_sicp/chapter_9/index.md
-    - 10 计算对象:
+    - 10 流式的计算:
       - course_sicp/chapter_10/index.md
-    - 11 流:
+    - 11 并发的计算:
       - course_sicp/chapter_11/index.md
-    - 12 元循环求值器:
+    - 12 关系的计算:
       - course_sicp/chapter_12/index.md
-    - 13 逻辑式程序设计:
+    - 13 计算的黑盒:
       - course_sicp/chapter_13/index.md
-    - 14 计算机设计:
-      - course_sicp/chapter_14/index.md
-      - 14.1 寄存机器:
-        - course_sicp/chapter_14/chapter_14_1/index.md
-      - 14.2 显示控制求值器:
-        - course_sicp/chapter_14/chapter_14_2/index.md
-      - 14.3 编译:
-        - course_sicp/chapter_14/chapter_14_3/index.md
-      - 14.4 存储分配与垃圾收集:    
-        - course_sicp/chapter_14/chapter_14_4/index.md 

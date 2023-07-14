@@ -11,11 +11,13 @@ comments: true
 
 	- 布尔值：对事实做判断：真或假
 
-	- 空值：空值，undefined、void等等
-
 	- 函数：函数并没有什么特殊之处，它也不过是一个变量，会产生一个值。
 
 	- 对象：对象也是一个变量，是物理世界里面的物体的一种映射。
+
+	- 指针(引用): 是一种内存地址
+
+	- 空值：空值，undefined、void等等
 
 ## 数值
 
@@ -1078,4 +1080,357 @@ comments: true
 	}
 	```
 
+## 指针(引用)
 
+!!! quote "什么是指针？"
+
+	常规计算机的存储可以看作是一串排列整齐的小隔间，每个小隔间里可以保存一点信息。这里的每个小隔间有一个具有唯一性的名字，称为它的 **地址** 或者 **位置**。典型的存储系统提供了两个基本操作：一个能取出保存在一个特定位置的数据，另一个能将新的数据赋给指定的位置。我们可以做存储地址的增量操作，以便支持对某一组小隔间的顺序访问。更一般的情况是，许多重要的数据操作都要求将存储器的要求也作为数据来看待和处理，以便可以将地址保存到存储位置里，并能在机器的寄存器里对它们做各种操作
+
+	“—— 《计算机程序的构造与解释》”
+
+=== "Scheme"
+	```
+	; 定义一个点A：x坐标=5, y坐标=6
+	(define A (cons 5 6))
+	; 把B指向A
+	(define B A)
+	; 取出点B的x坐标：5
+	(display (car B)) (newline)
+	; 把点A的x坐标改为：8
+	(set-car! A 8)
+	; 再取出点B的x坐标，变成了：8
+	(display (car B)) (newline)
+	```
+
+=== "Python"
+	```
+	# 定义一个点A
+	A = (5, 6)
+	# 把点B指向点A
+	B = A
+	# 取出点B的x坐标:5
+	print(B[0])
+	# 把点A的x坐标改为:8
+	A = (8, B[1])
+	# 再取出点B的x坐标,变成了:8
+	print(B[0])
+	```
+
+=== "C"
+	```
+	#include <stdio.h>
+	#include <stdlib.h>
+
+	int main() {
+		// 定义一个点A
+		int A[2] = {5, 6};
+		// 把点B指向点A
+		int *B;
+		B = &A[0];
+		// 取出点B的x坐标:5
+		printf("%d\n", *B);
+		// 把点A的x坐标改为:8
+		*(A + 0) = 8;
+		// 再取出点B的x坐标,变成了:8
+		printf("%d\n", *B);
+		return 0;
+	}
+	```
+
+=== "C++"
+	```
+	#include <iostream>
+	using namespace std;
+
+	class Point {
+	private:
+		int x;
+		int y;
+	public:
+		Point(int x, int y) : x(x), y(y) {}
+		int getX() const { return x; }
+		int getY() const { return y; }
+		void setX(int x) { this->x = x; }
+		void setY(int y) { this->y = y; }
+	};
+
+	int main() {
+		// 定义一个点A
+		Point A(5, 6);
+		// 把点B指向点A
+		Point& B = A;
+		// 取出点B的x坐标:5
+		cout << B.getX() << endl;
+		// 把点A的x坐标改为:8
+		A.setX(8);
+		// 再取出点B的x坐标,变成了:8
+		cout << B.getX() << endl;
+		return 0;
+	}
+	```
+
+=== "Java"
+	```
+	public class Point {
+		private int x;
+		private int y;
+		
+		public Point(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+		
+		public int getX() {
+			return x;
+		}
+		
+		public int getY() {
+			return y;
+		}
+		
+		public void setX(int x) {
+			this.x = x;
+		}
+		
+		public void setY(int y) {
+			this.y = y;
+		}
+		
+		public static void main(String[] args) {
+			// 定义一个点A
+			Point A = new Point(5, 6);
+			// 把点B指向点A
+			Point B = A;
+			// 取出点B的x坐标:5
+			System.out.println(B.getX());
+			// 把点A的x坐标改为:8
+			A.setX(8);
+			// 再取出点B的x坐标,变成了:8
+			System.out.println(B.getX());
+		}
+	}
+	```
+
+=== "C#"
+	```
+	using System;
+
+	class Point {
+		private int x;
+		private int y;
+
+		public Point(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+
+		public int getX() {
+			return x;
+		}
+
+		public int getY() {
+			return y;
+		}
+
+		public void setX(int x) {
+			this.x = x;
+		}
+
+		public void setY(int y) {
+			this.y = y;
+		}
+	}
+
+	class Program {
+		static void Main(string[] args) {
+			// 定义一个点A
+			Point A = new Point(5, 6);
+			// 把点B指向点A
+			Point B = A;
+			// 取出点B的x坐标:5
+			Console.WriteLine(B.getX());
+			// 把点A的x坐标改为:8
+			A.setX(8);
+			// 再取出点B的x坐标,变成了:8
+			Console.WriteLine(B.getX());
+		}
+	}
+	```
+
+=== "PHP"
+	```
+	<?php
+	class Point {
+		private $x;
+		private $y;
+
+		public function __construct($x, $y) {
+			$this->x = $x;
+			$this->y = $y;
+		}
+
+		public function getX() {
+			return $this->x;
+		}
+
+		public function getY() {
+			return $this->y;
+		}
+
+		public function setX($x) {
+			$this->x = $x;
+		}
+
+		public function setY($y) {
+			$this->y = $y;
+		}
+	}
+
+	// 定义一个点A
+	$A = new Point(5, 6);
+	// 把点B指向点A
+	$B = $A;
+	// 取出点B的x坐标:5
+	echo $B->getX() . "\n";
+	// 把点A的x坐标改为:8
+	$A->setX(8);
+	// 再取出点B的x坐标,变成了:8
+	echo $B->getX() . "\n";
+	?>
+	```
+
+=== "JavaScript"
+	```
+	class Point {
+		constructor(x, y) {
+			this.x = x;
+			this.y = y;
+		}
+
+		getX() {
+			return this.x;
+		}
+
+		getY() {
+			return this.y;
+		}
+
+		setX(x) {
+			this.x = x;
+		}
+
+		setY(y) {
+			this.y = y;
+		}
+	}
+
+	// 定义一个点A
+	var A = new Point(5, 6);
+	// 把点B指向点A
+	var B = A;
+	// 取出点B的x坐标:5
+	console.log(B.getX());
+	// 把点A的x坐标改为:8
+	A.setX(8);
+	// 再取出点B的x坐标,变成了:8
+	console.log(B.getX());
+	```
+
+=== "Go"
+	```
+	package main
+
+	import "fmt"
+
+	type Point struct {
+		x int
+		y int
+	}
+
+	func (p *Point) getX() int {
+		return p.x
+	}
+
+	func (p *Point) getY() int {
+		return p.y
+	}
+
+	func (p *Point) setX(x int) {
+		p.x = x
+	}
+
+	func (p *Point) setY(y int) {
+		p.y = y
+	}
+
+	func main() {
+		// 定义一个点A
+		A := Point{5, 6}
+		// 把点B指向点A
+		B := &A
+		// 取出点B的x坐标:5
+		fmt.Println(B.getX())
+		// 把点A的x坐标改为:8
+		A.setX(8)
+		// 再取出点B的x坐标,变成了:8
+		fmt.Println(B.getX())
+	}
+	```
+
+=== "Swift"
+	```
+	class Point {
+		var x: Int
+		var y: Int
+		
+		init(x: Int, y: Int) {
+			self.x = x
+			self.y = y
+		}
+		
+		func getX() -> Int {
+			return self.x
+		}
+		
+		func getY() -> Int {
+			return self.y
+		}
+		
+		func setX(x: Int) {
+			self.x = x
+		}
+		
+		func setY(y: Int) {
+			self.y = y
+		}
+	}
+
+	// 定义一个点A
+	let A = Point(x: 5, y: 6)
+	// 把点B指向点A
+	let B = A
+	// 取出点B的x坐标:5
+	print(B.getX())
+	// 把点A的x坐标改为:8
+	A.setX(x: 8)
+	// 再取出点B的x坐标,变成了:8
+	print(B.getX())
+	```
+
+=== "Kotlin"
+	```
+	data class Point(var x: Int, var y: Int)
+
+	fun main() {
+		// 定义一个点A
+		val A = Point(5, 6)
+		// 把点B指向点A
+		val B = A
+		// 取出点B的x坐标:5
+		println(B.x)
+		// 把点A的x坐标改为:8
+		A.x = 8
+		// 再取出点B的x坐标,变成了:8
+		println(B.x)
+	}
+	```
