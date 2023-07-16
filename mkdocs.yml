@@ -517,31 +517,31 @@ nav:
     - course_sicp/index.md
     - 1 计算的本质:
       - course_sicp/chapter_1/index.md
-    - 2 数据和变量:
+    - 2 数据和名字:
       - course_sicp/chapter_2/index.md
     - 3 组合和抽象:
       - course_sicp/chapter_3/index.md
     - 4 递归和循环:
       - course_sicp/chapter_4/index.md
-    - 4 复合的数据:
+    - 5 复合的数据:
       - course_sicp/chapter_5/index.md
-    - 5 高阶的函数:
+    - 6 高阶的函数:
       - course_sicp/chapter_6/index.md
-    - 4 数据的结构:
+    - 7 数据的类型:
       - course_sicp/chapter_7/index.md 
-    - 6 数据的类型:
+    - 8 数据的结构:
       - course_sicp/chapter_8/index.md
-    - 7 模式的匹配:
+    - 9 模式的匹配:
       - course_sicp/chapter_9/index.md
-    - 8 赋值的作用:
+    - 10 赋值和变量:
       - course_sicp/chapter_10/index.md
-    - 9 对象的计算:
+    - 11 对象的计算:
       - course_sicp/chapter_11/index.md
-    - 10 流式的计算:
+    - 12 流式的计算:
       - course_sicp/chapter_12/index.md
-    - 11 并发的计算:
+    - 13 并发的计算:
       - course_sicp/chapter_13/index.md
-    - 12 关系的计算:
+    - 14 关系的计算:
       - course_sicp/chapter_14/index.md
-    - 13 计算的黑盒:
+    - 15 计算的黑盒:
       - course_sicp/chapter_15/index.md
